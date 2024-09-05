@@ -15,6 +15,9 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 #load modules
 include(ClangFormat)
 
+#add format file
+add_clang_format_target(format-code ${PROJECT_SOURCE_DIR})
+
 #Using c++ 20 standard required
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
