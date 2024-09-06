@@ -2,10 +2,10 @@ include(AddGoogleTest)
 
 add_executable(
   unit_tests
-  test_calc.cpp
+  test_main.cpp
 )
 target_link_libraries(
-  unit_tests PRIVATE calculator GTest::gtest_main
+  unit_tests PRIVATE soundex  GTest::gmock_main
 )
 
 include(GoogleTest)

@@ -27,7 +27,7 @@ add_subdirectory(src)
 
 #main file
 add_executable(rooster main.cpp)
-target_link_libraries(rooster PRIVATE calculator)
+target_link_libraries(rooster PRIVATE soundex)
 
 #testing file
 add_subdirectory(test)
